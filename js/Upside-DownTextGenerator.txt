@@ -1,0 +1,25 @@
+<!--- start kode -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/agusls/generator@main/css/style.css">
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/agusls/generator@main/js/lib.generator.min.js"></script>
+
+<div class="text-center my-wrap-generator-tool pt-5 pb-5 translate-container">
+  <div class="custom-form-generator-tool transdiv english box-shadow-1">
+    <div class="custom-form-label">
+        <label class="generator-tool" for="inputText">Input</label>
+    </div>
+	<textarea name="inputText" class="custom-form-control" style="background-color:white; font-family: Arial; min-height:80px;" id="english-text" placeholder="Normal text goes here..."></textarea>
+  </div>
+  <div class="custom-form-generator-tool transdiv ghetto box-shadow-1">
+    <div class="custom-form-label">
+        <label for="hasilText">Output</label>
+    </div>
+	<textarea class="custom-form-control" style="background-color: white; font-family: Arial;min-height: 200px;" name="hasilText" id="ghetto-text" placeholder="Or Upside-down text goes here..."></textarea>
+  </div>
+</div>
+
+<div style="clear:both"></div>
+<script src="https://cdn.jsdelivr.net/gh/agusls/generator@main/js/TextReverser.js"></script>
+
+<!--- end kode -->
