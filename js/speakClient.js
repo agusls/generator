@@ -1,6 +1,6 @@
 var speakWorker;
 try {
-    speakWorker = new Worker('https://agusls.github.io/generator/js/speakWorker.js');
+    speakWorker = new Worker('./speakWorker.js');
 } catch (e) {
     console.log('speak.js warning: no worker support');
 }
