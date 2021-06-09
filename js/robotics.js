@@ -9,7 +9,7 @@ var audio = $("body").append( "<div style='display:none;' id='audio'></div>" );
 
 
 var script = document.createElement( 'script' );
-script.setAttribute( 'src', "https://agusls.github.io/generator/js/speakClient.js" );
+script.setAttribute( 'src', "./js/speakClient.js" );
 document.body.appendChild( script )
 script.addEventListener('load', function() {
   $('#play').text("Speak");
