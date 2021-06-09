@@ -34,7 +34,7 @@ script.addEventListener('load', function() {
 
 $("#english-text").on('keypress', function() {
   $("#download_link").css('opacity',0.1);
-  $("#download_link").attr("href", "#" );
+  //$("#download_link").attr("href", "#" );
 })
 
 
