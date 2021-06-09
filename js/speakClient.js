@@ -55,7 +55,7 @@ function speak(text, args) {
             return ret;
         }
         document.getElementById("audio")
-            .innerHTML = ("<audio id=\"player\" src=\"data:audio/x-wav;base64," + encode64(wav) + "\">");
+            .innerHTML = ("<audio id=\"player\" src=\"data:audio/x-mp3;base64," + encode64(wav) + "\">");
         document.getElementById("player")
             .play();
     }
