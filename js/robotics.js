@@ -40,7 +40,7 @@ $("#english-text").on('keypress', function() {
 
 
 
-var play_button = $(".transdiv.ghetto").append("<div id='button_container'><button id='play'>LOADING...</button><br/><a style='color:#0070FF;opacity:0.1;margin-bottom:0.5em; display:block;' href='' download='audio' id='download_link' target='_blank'>Download Audio File<br/><span style='font-size:80%;'>(right click and save as <b>audio.mp3</b>)</span></a></div>");
+var play_button = $(".transdiv.ghetto").append("<div id='button_container'><button id='play'>LOADING...</button><br/><a style='color:#0070FF;opacity:0.1;margin-bottom:0.5em; display:block;' download='audio' id='download_link' target='_blank'>Download Audio File<br/><span style='font-size:80%;'>(right click and save as <b>audio.mp3</b>)</span></a></div>");
 $("#button_container").css({
     position: "relative",
     top: "50%",
