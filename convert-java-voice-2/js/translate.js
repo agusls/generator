@@ -29,7 +29,7 @@ var play_button = $(".transdiv.ghetto").append("<div id='button_container2'><cen
 
   $('#play_text').attr('data-text', 'Convert to Voice');
   $(document).ready(function() {
-    $("#play").click(function() {
+    $("#play").click(function(e) {
       //$("#download_link").css('opacity',0.1);
       //attachPlayEventInterval = setInterval(function() {
         if($('textarea').val().length > 0) {
@@ -37,6 +37,20 @@ var play_button = $(".transdiv.ghetto").append("<div id='button_container2'><cen
            //$("#download_link").css('opacity',1);
 		   $("#download_box").css('opacity',1);		   
            //$("#download_link").attr("href", "#download-java-voice" );
+		   
+		    e.preventDefault();  //stop the browser from following
+    var textJava = $("#english-text").val();
+	
+	var urlTranslate = 'https://translate.google.com/translate_tts?ie=UTF-8&q='+ textJava +'&tl=jv&total=1&idx=0&client=tw-ob&prev=input&ttsspeed=1';
+	
+		   var audio = document.getElementById('speech');
+
+//var source = document.getElementById('audioSource');
+			audio.src = urlTranslate;
+
+			audio.load(); //call this to just preload the audio without playing
+			audio.play(); //call this to play the song right away
+
         } else {
 		   //$("#download_link").css('opacity',0.1);
 		   $("#download_box").css('opacity',0.1);	

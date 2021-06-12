@@ -24,12 +24,12 @@ $('textarea').keyup(function() {
 
 var audio = $("body").append( "<div style='display:none;' id='audio'></div>" );
 
-var play_button = $(".transdiv.ghetto").append("<div id='button_container2'><center><a id='play' class='button outline' href='javascript:;' aria-label='Speak' rel='noreferrer' data-ss1623379296='1'><i class='icon speak'></i><span id='play_text' data-text='Loading' data-en='Loading'></span></a></center><div  style='opacity:0.1; margin: 0 auto;' id='download_box' class='downloadInfo'><span class='fileType' data-text='mp3'></span><div class='fileName'><!--[ File name ]--><span>audio.mp3</span><span class='fileSize'></span></div><!--[ Download link (change href='...' atribute to add link download) ]--><a class='button fileLink' id='download_link' aria-label='Download'><i class='icon download'></i></a></div></div>");
+var play_button = $(".transdiv.ghetto").append("<div id='button_container2'><center><a id='play' class='button outline' href='javascript:;' aria-label='Speak' rel='noreferrer' data-ss1623379296='1'><i class='icon speak'></i><span id='play_text' data-text='Loading' data-en='Loading'></span></a></center><div  style='opacity:0.1; margin: 0 auto;' id='download_box' class='downloadInfo'><span class='fileType' data-text='mp3'></span><div class='fileName'><!--[ File name ]--><span>audio.mp3</span><span class='fileSize'></span></div><!--[ Download link (change href='...' atribute to add link download) ]--><a class='button fileLink' id='download_link' aria-label='Download' rel='noreferrer' ><i class='icon download'></i></a></div></div>");
 
 
   $('#play_text').attr('data-text', 'Convert to Voice');
   $(document).ready(function() {
-    $("#play").click(function() {
+    $("#play").click(function(e) {
       $("#download_link").css('opacity',0.1);
       //attachPlayEventInterval = setInterval(function() {
         if($('textarea').val().length > 0) {
@@ -37,6 +37,20 @@ var play_button = $(".transdiv.ghetto").append("<div id='button_container2'><cen
            $("#download_link").css('opacity',1);
 		   $("#download_box").css('opacity',1);		   
            $("#download_link").attr("href", "#download-java-voice" );
+		   
+		   e.preventDefault();  //stop the browser from following
+			var textJava = $("#english-text").val();
+			
+			var urlTranslate = 'https://translate.google.com/translate_tts?ie=UTF-8&q='+ textJava +'&tl=jv&total=1&idx=0&client=tw-ob&ttsspeed=1';
+			
+			//$("audio").attr('src') = urlTranslate;
+			$("#download_link").attr("href", urlTranslate);
+			//$("#download_link").attr("target", "_blank");
+			$("#download_link").attr("rel", "noreferrer");
+			
+			//window.open(urlTranslate);
+			console.log(urlTranslate);
+			
         } else {
 		   $("#download_link").css('opacity',0.1);
 		   $("#download_box").css('opacity',0.1);	
@@ -52,15 +66,3 @@ $("#english-text").on('keypress', function() {
 	document.getElementById("btnClear").style.display = "block";
   }  
 })
-
-$('#download_link').click(function(e) {
-    e.preventDefault();  //stop the browser from following
-    var textJava = $("#english-text").val();
-	
-	var urlTranslate = 'https://translate.google.com/translate_tts?ie=UTF-8&q='+ textJava +'&tl=jv&total=1&idx=0&client=tw-ob&prev=input&ttsspeed=1';
-	
-	//$("audio").attr('src') = urlTranslate;
-	
-    window.open(urlTranslate);
-	console.log(urlTranslate);
-});
