@@ -194,11 +194,12 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
     box-shadow: 0px 0px 4px 0px rgb(136 136 136 / 70%);
     background: #ffffff;
     padding: 0px;
+	position: relative;
 }
 .head-box{
 	padding: 15px 15px;
     border-bottom: 2px solid rgb(26 115 232);
-    width: 110px;
+    width: 150px;
     text-transform: uppercase;
     font-family: 'Roboto',arial,sans-serif;
     font-size: 14p;
