@@ -24,7 +24,7 @@ $('textarea').keyup(function() {
 
 var audio = $("body").append( "<div style='display:none;' id='audio'></div>" );
 
-var play_button = $(".transdiv.ghetto").append("<div id='button_container'><div style='display: flex; justify-content: center;'><a id='play' class='button outline' href='javascript:;' aria-label='Speak' rel='noreferrer' data-ss1623379296='1'><i class='icon speak'></i><span id='play_text' data-text='Loading' data-en='Loading'></span></a></div><div  style='opacity:0.1; margin: 0 auto;' id='download_box' class='downloadInfo'><span class='fileType' data-text='mp3'></span><div class='fileName'><!--[ File name ]--><span>audio.mp3</span><span class='fileSize'></span></div><!--[ Download link (change href='...' atribute to add link download) ]--><a class='button fileLink' id='download_link' aria-label='Download' rel='noreferrer' ><i class='icon download'></i></a></div></div>");
+var play_button = $(".transdiv.ghetto").append("<div id='button_container'><div style='display: flex; justify-content: center;width: 100%;'><a id='play' class='button outline' href='javascript:;' aria-label='Speak' rel='noreferrer' data-ss1623379296='1'><i class='icon speak'></i><span id='play_text' data-text='Loading' data-en='Loading'></span></a></div><div  style='opacity:0.1; margin: 0 auto;' id='download_box' class='downloadInfo'><span class='fileType' data-text='mp3'></span><div class='fileName'><!--[ File name ]--><span>audio.mp3</span><span class='fileSize'></span></div><!--[ Download link (change href='...' atribute to add link download) ]--><a class='button fileLink' id='download_link' aria-label='Download' rel='noreferrer' ><i class='icon download'></i></a></div></div>");
 
 
   $('#play_text').attr('data-text', 'Convert to Voice');
