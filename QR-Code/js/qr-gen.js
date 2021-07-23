@@ -6,7 +6,7 @@ $('#info').text( '0/' + maxLength);
 $('textarea').keyup(function() {
 	var currLength = $(this).val().length;
 	var textlen = maxLength - currLength;
-	$('#info').text(textlen + '/' + maxLength);
+	$('#info').text(currLength + '/' + maxLength);
 });
 
 function eraseText() {
