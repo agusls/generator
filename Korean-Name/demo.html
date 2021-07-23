@@ -1,0 +1,53 @@
+<!--- start kode -->
+<link rel="stylesheet" href="./css/style.css">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+
+<div class="Blog my-wrap-generator-tool translate-container-radio" style="width:90%;">
+  <div style="display: table;  width: max-content;  margin: 0 auto;">
+    <div style="text-align: center;">
+      <span style="display: block;text-align: center;">Jenis Kelamin</span>
+      <label class="container-radio">Laki-laki
+        <input type="radio" checked="checked" name="sex" value="L">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container-radio">Perempuan
+        <input type="radio" name="sex" value="P">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+    
+    <div style="text-align: center;">
+      <span style="display: block;text-align: center;">Tanggal Lahir</span>
+      <select id="day">
+      </select>
+      <select id="month">
+      </select>
+      <select id="year">
+      </select>
+    </div>
+
+    <div>
+      <div id="button_container">
+        <div style="display: flex; justify-content: center;width: 100%;">
+          <a id="generate-name" class="button outline" href="javascript:;" aria-label="Speak" rel="noreferrer" data-ss1623379296="1">
+            <span id="gen-name" data-text="Create Korean Name" data-en="Loading"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-box">
+  <div class="head-box">Output - Text</div>
+  <div class="transdiv english" style="border-bottom: 1px solid #ddd;"></div>
+  <div style="padding:15px;" id="tResult">
+  
+  </div>
+  </div> 
+
+</div>
+
+<div style="clear:both"></div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="./js/korean-name.js"></script>
+<!--- end kode -->

@@ -1,0 +1,47 @@
+<!--- start kode -->
+<link rel="stylesheet" href="./css/style.css">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+
+<div class="Blog my-wrap-generator-tool translate-container-radio" style="width:90%;">
+  
+  <div class="main-box">
+    <div class="head-box">Input - Text</div>
+    <div class="transdiv english" style="border-bottom: 1px solid #ddd;"></div>
+    <div style="padding:15px;">
+    <button id="btnClear" class="clear" onclick="javascript:eraseText();">x</button>
+    <textarea name="inputText" class="custom-form-control" autofocus style="border:none; resize: none; background-color:white; font-family: Arial; min-height:80px;" id="english-text" placeholder="English text goes here..."></textarea>
+    <div id="info">0/200</div>
+    </div>
+    </div>
+
+  <div style="display: table;  width: max-content;  margin: 5px auto;">
+    <div style="text-align: center;">
+      <span style="display: block;text-align: center;">Size <i>width</i> x <i>height</i></span>
+      <div style="position:relative; margin:auto; width:90%">
+        <span style="font-size: small; color: #989898; min-width:100px;">
+        <span id="vSize"></span>
+        </span>
+        <input type="range" id="xSize" min="100" max="500" step="10" style="width:80%"> 
+      </div>
+    
+    </div>
+
+    <div>
+      <div id="button_container">
+        <div style="display: flex; justify-content: center;width: 100%;">
+          <a id="generate-qr" class="button outline" href="javascript:;" aria-label="Speak" rel="noreferrer" data-ss1623379296="1">
+            <span id="gen-qr" data-text="Generate QR" data-en="Loading"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="resultQR">
+  </div>
+</div>
+
+<div style="clear:both"></div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="./js/qr-gen.js"></script>
+<!--- end kode -->
