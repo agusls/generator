@@ -176,18 +176,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
     display: none;
 }
 
-/* Widget Post Toc */
-.Blog .tocInner, .Blog .spoiler{border:1px solid rgba(0,0,0,.1);border-left:0;border-right:0;padding:25px 15px;margin:30px 0;font-size:15px;font-family:var(--font-body-alt)}
-.Blog .tocInner .tocTitle, .Blog .spoilerTitle{outline:0;font-weight:700;font-family:var(--font-body-alt);color:var(--head-color);display:flex;align-items:center}
-.Blog .tocInner .tocTitle:after{content:'Hide all';font-weight:400;font-size:85%;font-family:var(--font-body);color:var(--body-color);margin-left:auto}
-.Blog .tocInner .tocContent, .Blog .spoilerContent{max-height:1000vh;transition:all .4s ease;-webkit-transition:all .4s ease;overflow:hidden}
 
-/* Widget Post Spoiler */
-.Blog .spoilerTitle label{margin-left:auto;color:#fefefe;background-color:var(--link-bg-color);border-radius:2px;padding:3px 15px;font-size:11px;font-weight:400;font-family:var(--font-body)}
-.Blog .spoilerTitle label::before{content:' Show all'}
-.Blog .spoilerContent{max-height:0}
-.Blog .spoilerInput:checked + .spoilerTitle label:before{content:' Hide all'}
-.Blog .spoilerInput:checked ~ .spoilerContent{max-height:1000vh}
 .main-box{
 	border-radius: 10px;
     border: 1px solid rgb(199 199 199 / 76%);
@@ -206,23 +195,8 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
     font-weight: 600;
     color: 1a73e8;
 }
-.clear {
-	position: absolute;
-	margin-top: -10px;
-    right: 20px;
-    border-radius: 50%;
-    border: none;
-    font-size: 20px;
-    font-family: sans-serif;
-    background-color: white;
-    padding: 10px;
-    width: 40px;
-	cursor: pointer;
-	display:none;
-}
-.clear:hover{
-	{opacity: .1}
-}
+
+
 #info{
 	position: relative;
     float: right;
