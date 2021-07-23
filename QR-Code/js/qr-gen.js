@@ -57,7 +57,7 @@ $(document).ready(function() {
         console.log(url);
 
         var resultQR = document.querySelector("#resultQR");
-        //resultQR.style.textAlign = "center";
+        resultQR.style.textAlign = "center";
         resultQR.className = "";
         resultQR.innerHTML = '<img src="' + url + '"/>';
 
