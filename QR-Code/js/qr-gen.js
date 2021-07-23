@@ -1,3 +1,9 @@
+function eraseText() {
+    document.getElementById("english-text").value = "";
+    document.getElementById("english-text").focus();
+    document.getElementById("btnClear").style.display = "none";
+}
+
 $(document).ready(function() {
     
     $("#english-text").on('keypress', function() {        
@@ -5,12 +11,6 @@ $(document).ready(function() {
           document.getElementById("btnClear").style.display = "block";
         }        
     })
-    
-    function eraseText() {
-        document.getElementById("english-text").value = "";
-        document.getElementById("english-text").focus();
-        document.getElementById("btnClear").style.display = "none";
-    }
 
     var xSize = document.querySelector('#xSize');
     var vSize = document.querySelector('#vSize');
