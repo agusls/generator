@@ -13,6 +13,7 @@ function eraseText() {
     document.getElementById("english-text").value = "";
     document.getElementById("english-text").focus();
     document.getElementById("btnClear").style.display = "none";
+    $('#info').text( '0/' + maxLength);
 }
 
 
