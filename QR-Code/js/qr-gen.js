@@ -1,5 +1,17 @@
 $(document).ready(function() {
     
+    $("#english-text").on('keypress', function() {        
+        if($("#english-text").length > 0) {
+          document.getElementById("btnClear").style.display = "block";
+        }        
+    })
+    
+    function eraseText() {
+        document.getElementById("english-text").value = "";
+        document.getElementById("english-text").focus();
+        document.getElementById("btnClear").style.display = "none";
+    }
+
     var xSize = document.querySelector('#xSize');
     var vSize = document.querySelector('#vSize');
     var off = xSize.offsetWidth / (parseInt(xSize.max) - parseInt(xSize.min));
