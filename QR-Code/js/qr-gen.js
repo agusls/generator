@@ -42,6 +42,8 @@ $(document).ready(function() {
 
     $("#generate-qr").click(function(e) {
 
+        $('#gen-qr').attr('data-text','loading image QR ...');
+
         var xSize = document.querySelector('#xSize');
         var dataqr = $("textarea[name='inputText']").val();
         
@@ -60,6 +62,8 @@ $(document).ready(function() {
         resultQR.style.textAlign = "center";
         resultQR.className = "";
         resultQR.innerHTML = '<img src="' + url + '"/>';
+
+        $('#gen-qr').attr('data-text','Generate QR')
 
     })
 });
