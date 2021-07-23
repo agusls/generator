@@ -1,8 +1,20 @@
+var maxLength = 200;
+
+$("textarea").attr('maxlength', maxLength);
+$('#info').text( '0/' + maxLength);
+
+$('textarea').keyup(function() {
+	var currLength = $(this).val().length;
+	var textlen = maxLength - currLength;
+	$('#info').text(textlen + '/' + maxLength);
+});
+
 function eraseText() {
     document.getElementById("english-text").value = "";
     document.getElementById("english-text").focus();
     document.getElementById("btnClear").style.display = "none";
 }
+
 
 $(document).ready(function() {
     
