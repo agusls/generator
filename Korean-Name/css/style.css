@@ -290,3 +290,9 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
     display: block;
     text-align: center;
 }
+
+select {
+	font-size: large;
+	padding: 2px;
+	margin-right: 5px;
+}

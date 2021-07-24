@@ -209,7 +209,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
 	display:none;
 }
 .clear-text:hover{
-	{opacity: .1}
+	opacity: .1;
 }
 #info{
 	position: relative;

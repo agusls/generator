@@ -14,11 +14,33 @@ function eraseText() {
     document.getElementById("english-text").focus();
     document.getElementById("btnClear").style.display = "none";
     $('#info').text( '0/' + maxLength);
+    $("#download-qr").css('opacity',0.1);
+    $("#download-qr").css('pointer-events', 'none');
+    $("#download-qr").css('cursor', 'default');
+    document.querySelector("#resultQR").innerHTML = '';
 }
 
+// Using fetch
+async function downloadImage(imageSrc) {
+    const image = await fetch(imageSrc)
+    const imageBlog = await image.blob()
+    const imageURL = URL.createObjectURL(imageBlog)
+  
+    const link = document.createElement('a')
+    link.href = imageURL
+    link.download = 'qr-code'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
 $(document).ready(function() {
     
+    $("#download-qr").css('opacity',0.1);
+    $("#download-qr").css('opacity',0.1);
+    $("#download-qr").css('pointer-events', 'none');
+    $("#download-qr").css('cursor', 'default');
+
     $("#english-text").on('keypress', function() {        
         if($("#english-text").length > 0) {
           document.getElementById("btnClear").style.display = "block";
@@ -63,7 +85,18 @@ $(document).ready(function() {
         resultQR.className = "";
         resultQR.innerHTML = '<img src="' + url + '"/>';
 
-        $('#gen-qr').attr('data-text','Generate QR')
-
+        $('#gen-qr').attr('data-text','Generate QR');
+        $("#download-qr").css('opacity',1);
+        $('#download-qr').attr("data-href", url);
+        $("#download-qr").css('pointer-events', '');
+        $("#download-qr").css('cursor', '');
     })
+
+    $("#download-qr").click(function(e) {
+        var href = $(this).attr('data-href');
+        console.log(href);
+        downloadImage(href);
+    })   
+    
+
 });
