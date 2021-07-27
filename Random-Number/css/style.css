@@ -246,6 +246,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
     text-align: center;
     font-size: xx-large;
     font-weight: 600;
+	margin-top: 20px;
 }
 
 .resultInfo{
@@ -253,4 +254,5 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
     text-align: center;
     font-size: small;
     color: #a0a0a0;
+	margin-top: 20px;
 }
