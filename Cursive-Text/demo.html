@@ -1,0 +1,44 @@
+<!--- start kode -->
+<link rel="stylesheet" href="./css/style.css">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+
+<div class="Blog my-wrap-generator-tool translate-container-radio" style="width:90%;">
+  
+  <div class="main-box">
+    <div class="head-box">Input - Text</div>
+    <div class="transdiv english" style="border-bottom: 1px solid #ddd;"></div>
+    <div style="padding:15px;">
+    <button id="btnClear" class="clear-text" onclick="javascript:eraseText();">x</button>
+    <textarea name="inputText" class="custom-form-control" style="border:none; resize: none; background-color:white; font-family: Arial; min-height:80px;" id="english-text" placeholder="Input text goes here..."></textarea>
+    <div id="info">0/200</div>
+    </div>
+  </div>
+
+  <div style="display: block;  width: max-content;  margin: 10px auto 25px auto;">
+    <div style="text-align: center; display: contents;">&nbsp;
+      <label class="container-radio">Reguler
+        <input type="radio" checked="checked" name="style" value="reguler">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container-radio">Bold
+        <input type="radio" name="style" value="bold">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+  </div>
+  
+  
+  <div class="main-box">
+    <div class="head-box">Output - Text</div>
+    <div class="transdiv english" style="border-bottom: 1px solid #ddd;"></div>
+    <div style="padding:15px;min-height: 50px;font-size: larger;" id="tResult">
+      
+    </div>
+  </div>
+
+</div>
+
+<div style="clear:both"></div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="./js/cursive.js"></script>
+<!--- end kode -->
