@@ -1,8 +1,3 @@
-// Get the modal
-var modal = document.getElementById("countryModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("country");
 
 $(document).ready(function() {
 	
