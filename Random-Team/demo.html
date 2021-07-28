@@ -1,0 +1,59 @@
+<!--- start kode -->
+<link rel="stylesheet" href="./css/style.css">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+
+<div class="Blog my-wrap-generator-tool translate-container-radio" style="width:90%;">
+  
+  <div style="display: table;  width: max-content;  margin: 0 auto;">
+    <div style="display: block;">
+      <label for="dataset">Dataset:</label>
+      <select id="dataset" style="font-size: large;padding-top: 3;padding-bottom: 3px;">
+		<option value="sports">Sports</option>
+		<option value="mlb-team">&nbsp;&nbsp;MLB Teams</option>
+		<option value="soccer-teams">&nbsp;&nbsp;MLS Soccer</option>
+		<option value="nba-team">&nbsp;&nbsp;NBA Teams</option>
+		<option value="ncaa-basketball">&nbsp;&nbsp;NCAA Basketball</option>
+		<option value="ncaa-football">&nbsp;&nbsp;NCAA Football</option>
+		<option value="nfl-team">&nbsp;&nbsp;NFL Teams</option>
+		<option value="nhl-team">&nbsp;&nbsp;NHL Teams</option>
+		<option value="premier-league-football-teams">&nbsp;&nbsp;Premier League</option>
+		<option value="team-names">&nbsp;&nbsp;Team Name</option>
+	  </select>
+    </div>
+    
+    <div style="display: block;">
+      <label for="quantity">Quantity:</label>
+		  <input type="number" id="quantity" maxlength="9" value="10" style="width: 100px;">
+    </div>
+
+	<div style="display: block;">
+      <label for="Duplicates">Duplicate:</label>
+		  <input type="checkbox" id="duplicate" value="1">
+    </div>
+	
+    <div>
+      <div id="button_container">
+        <div style="display: flex; justify-content: center;width: 100%;">
+          <a id="random" class="button outline" href="javascript:;" rel="noreferrer" data-ss1623379296="1">
+            <span data-text="Random" data-en="Loading"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="main-box">
+  <div class="head-box">Output - Text</div>
+  <div class="transdiv english" style="border-bottom: 1px solid #ddd;"></div>
+  <div style="padding:15px;" id="tResult">
+    
+  </div>
+  </div> 
+
+</div>
+
+<div style="clear:both"></div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="./js/rand-team.js"></script>
+<!--- end kode -->
