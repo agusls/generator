@@ -267,7 +267,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
   
   .list li {
     border-bottom: 1px solid #fff;
-    flex: 1 0 25%;
+    flex: 0 0 25%;
     padding: 10px;
   }
   ol.list {
