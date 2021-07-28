@@ -207,7 +207,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
 
   label{
       margin-right: 20px;
-      width: 60px;
+      width: 70px;
   }
   
   #spinner {
@@ -289,6 +289,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
     position: relative;
     display: block;
     padding: .0em .0em .0em 1.5em;
+	font-size: larger;
 }
 
 rand_large (
