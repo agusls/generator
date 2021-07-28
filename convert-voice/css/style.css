@@ -206,7 +206,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
     font-weight: 600;
     color: 1a73e8;
 }
-.clear {
+.clear-text {
 	position: absolute;
 	margin-top: -10px;
     right: 20px;
@@ -220,7 +220,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
 	cursor: pointer;
 	display:none;
 }
-.clear:hover{
+.clear-text:hover{
 	{opacity: .1}
 }
 #info{
