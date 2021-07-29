@@ -101,7 +101,7 @@
 }
 .custom-form-panel
 {
-    height: 90%;
+    height: 95%;
 }
 .custom-form-generator-tool > .custom-form-control
 {
@@ -206,8 +206,8 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
 }
 
   label{
-      margin-right: 20px;
-      width: 70px;
+      margin-right: 10px;
+      width: 65px;
   }
   
   #spinner {
@@ -267,7 +267,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
   
   .list li {
     border-bottom: 1px solid #fff;
-    flex: 0 0 25%;
+    flex: 0 0 45%;
     padding: 10px;
   }
   ol.list {
@@ -276,6 +276,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
     list-style:none;
 }
 
+/*
 .list li:before{
     content: counter(item) ")";
     counter-increment: item;
@@ -284,6 +285,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
     font-size:xx-small;
     left: 1em;
 }
+*/
 
 .list li{
     position: relative;
