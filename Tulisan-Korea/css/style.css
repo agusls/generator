@@ -108,12 +108,10 @@
     padding: .6rem 1rem;
     border-radius: 7px;
     min-width: 295px;
-    text-align: center;
 }
 .custom-form-generator-tool > .custom-form-control
 {
     border: solid 2px #204ecf;
-    color: var(--e_blue);
     background: #FAFAFA;
 }
 
