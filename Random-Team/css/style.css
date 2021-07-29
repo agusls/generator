@@ -208,6 +208,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
   label{
       margin-right: 10px;
       width: 65px;
+	  white-space: nowrap;
   }
   
   #spinner {
