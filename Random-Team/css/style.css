@@ -181,7 +181,7 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
 .box h2 {
 	background: #f80538;
     color: white;
-    padding: 5 0 5 15px;
+    padding: 5px 0px 5px 15px;
     margin: 0;
     font-size: 18;
     font-family: arial;
