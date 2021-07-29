@@ -540,27 +540,27 @@ $(document).ready(function() {
 		console.log(tRand);
 		
 		var dataset = $("#dataset").val();
-		var result = '<ol class="list">';
+		var result = '';
 		var dataSports2 = jsonTeamName['RandL'][2];
 		var ii = dataSports2.length;
-
+		
+		let numbers = 1;
 		z = 0;
 		while ( z < tRand.length ) {
 			if ( typeof tRand[z] === 'object' ) {				
-				result += '<li><span class="rand_large" style="color:' + tRand[z].color[0] + ';text-shadow:' + tRand[z].color[1] + ' 1px 1px 0;">' + tRand[z].name + '</span></li>';
+				result += '<div class="column-results"><span class="text-result" style="color:' + tRand[z].color[0] + ';text-shadow:' + tRand[z].color[1] + ' 1px 1px 0;">' + numbers + '. ' + tRand[z].name + '</span></div>';
 			} else {
 				if (dataset == 'team-names') {					
 					jj = Math.floor(Math.random() * (ii+1));
-					result += '<li>' + tRand[z] + ' ' + dataSports2[jj] + '</li>';
+					result += '<div class="column-results"><span class="text-result">' + numbers + '. ' +tRand[z] + ' ' + dataSports2[jj] + '</span></div>';
 				} else {
-					result += '<li>' + tRand[z] + '</li>';
+					result += '<div class="column-results"><span class="text-result">' + numbers + '. ' +tRand[z] + '</span></div>';
 				}
 				
 			}
 			
-			z++;
+			z++; numbers++;
 		}
-		result += '</ol>';
 
 		return result;
 	}
@@ -600,7 +600,6 @@ $(document).ready(function() {
 		results = randomNoDuplicate(dataSports, quantity, duplicate);
         
         var tResult = document.querySelector("#tResult");
-        tResult.className = "";
         tResult.innerHTML = results;
 		
 		
