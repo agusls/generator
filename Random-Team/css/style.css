@@ -248,13 +248,11 @@ a{color:var(--link-color);text-decoration:none} a:hover{opacity:.7;transition:op
 }
 
 .row-results {
-  content: "";
-  display: table;
+  display: flex;
   padding: 15px;
-  clear: both;
+  flex-wrap: wrap;
 }
 
 .column-results {
-  float: left;
-  width: 50%;
+  flex: 50%;
 }
