@@ -548,7 +548,7 @@ $(document).ready(function() {
 		z = 0;
 		while ( z < tRand.length ) {
 			if ( typeof tRand[z] === 'object' ) {				
-				result += '<div class="column-results"><span class="text-result" style="color:' + tRand[z].color[0] + ';text-shadow:' + tRand[z].color[1] + ' 1px 1px 0;">' + numbers + '. ' + tRand[z].name + '</span></div>';
+				result += '<div class="column-results"><span class="text-result">' + numbers + '. ' + tRand[z].name + '</span></div>';
 			} else {
 				if (dataset == 'team-names') {					
 					jj = Math.floor(Math.random() * (ii+1));
