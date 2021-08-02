@@ -1,0 +1,50 @@
+<!--- start kode -->
+<link rel="stylesheet" href="./css/style.css">
+
+<div class="Blog my-wrap-generator-tool translate-container-radio" style="width:90%;">
+  
+  <div class="custom-form-generator-tool transdiv english box-shadow-1">
+	<button id="btnClear" class="clear-text" onclick="javascript:eraseText();">x</button>
+	<textarea name="inputText" class="custom-form-control" style="background-color:white; font-family: Arial; min-height:80px;" id="english-text" placeholder="Normal text goes here..."></textarea>
+	
+	<div id="info"></div>
+  </div>
+  
+ 
+
+  <div style="display: flex;  width: 300px;  margin: 10px auto 25px auto;">
+    <div style="flex: 50%;">Settings:</br> 
+        <div><input type="checkbox" id="period" name="period" value="1" style="width: auto;">
+        <label for="period">Add period</label></div>   
+        <div><input type="checkbox" id="space" name="space" value="1" style="width: auto;">
+        <label for="space">Add space</label></div>
+		<div><input type="checkbox" id="newline" name="newline" value="1" style="width: auto;">
+        <label for="newline">Add newline</label></div>
+    </div>
+	 <div style="flex: 50%;">Repetitions</br>
+		<input type="number" id="repeat" name="repeat" value="10" style="width: 90px"></br>
+		<a id="btnRepeat" class="button outline" href="javascript:;" rel="noreferrer" data-ss1623379296="1" data-ss1627898134="1">
+            <span data-text="Repeat Text" data-en="Loading"></span>
+          </a>
+    </div>
+  </div>
+  
+  <div class="custom-form-generator-tool transdiv english box-shadow-1">
+	<button id="btnCopy" class="copy-text" onclick="javascript:;">copy</button>
+	<textarea name="tResult" class="custom-form-control" style="background-color:white; font-family: Arial; min-height:80px;" id="tResult"></textarea>
+	
+	<div id="info"></div>
+  </div>
+  
+  <div style="display: flex;  width: fit-content;  margin: 10px auto 25px auto;">
+  <a id="btnWA" style="color:white; background-color: #25d366;" class="button outline" href="javascript:;" rel="noreferrer" data-ss1623379296="1" data-ss1627898134="1">
+            <i class="icon whatsapp"></i><span data-text="Send Whatsapp" data-en="Loading"></span>
+          </a>
+  </div>
+
+</div>
+
+<div style="clear:both"></div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="./js/repeater.js"></script>
+<!--- end kode -->
