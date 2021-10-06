@@ -115,7 +115,7 @@
     loadCountryData: function (e) {
        $.ajax({
         dataType: 'json',
-        url: e.options.dataUrl,
+        url: 'https://agusls.github.io/generator/wa/data.json', //e.options.dataUrl,
 		type: 'get',
         async: false,
         success: function (data) {
