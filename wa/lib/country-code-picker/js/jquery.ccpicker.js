@@ -115,7 +115,7 @@
     loadCountryData: function (e) {
        $.ajax({
         dataType: 'json',
-        url: 'https://raw.githubusercontent.com/agusls/generator/main/wa/lib/country-code-picker/data.json', //e.options.dataUrl,
+        url: 'https://cdn.jsdelivr.net/gh/agusls/generator/wa/lib/country-code-picker/data.json', //e.options.dataUrl,
 		type: 'get',
         async: false,
         success: function (data) {
