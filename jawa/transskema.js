@@ -732,3 +732,47 @@ function salin() {
         }, 3e3)
     })
 }
+
+$(document).ready(function () {
+
+        $("#reverse").click(function () {
+
+            var txtInput = $("#txtInput").val();
+            var txtOutput = $("#txtOutput").val();
+            $("#txtInput").val(txtOutput);
+            $("#txtOutput").val(txtInput);
+
+            if ($("#idInput").text() == "Latin") {
+
+                $("#idInput").text("Aksara Jawa");
+                $("#idInput").attr("lang", "jw");
+                $("#idInput").attr("tika", "jw_lt");
+                $("#idInput").attr("fr", "jw");
+                $("#idInput").attr("to", "lt");
+                $("#idOutput").text("Latin");
+            } else {
+                $("#idInput").text("Latin");
+                $("#idInput").attr("lang", "lt");
+                $("#idInput").attr("tika", "lt_jw");
+                $("#idInput").attr("fr", "lt");
+                $("#idInput").attr("to", "jw");
+                $("#idOutput").text("Aksara Jawa");
+            }
+
+        });
+
+        $("#txtInput").on("keyup", function () {
+
+            if ($(this).val().length > 2) {
+                konversi();
+            } else {
+                $("#txtOutput").val("");
+                $("#copyBtn").css("display", "none");
+            }
+
+        });
+
+        $("#copyBtn").on("click", function () {
+            salin();
+        });
+    });
