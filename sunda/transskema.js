@@ -761,7 +761,7 @@ $(document).ready(function () {
     $("#txtOutput").val(txtInput);
     $("#txtInput").toggleClass("aksara_sunda");
     $("#txtOutput").toggleClass("aksara_sunda");
-    
+
     if ($("#idInput").text() == "Latin") {
       $("#idInput").text("Aksara Sunda");
       $("#idInput").attr("lang", "sd");
@@ -791,5 +791,11 @@ $(document).ready(function () {
 
   $("#copyBtn").on("click", function () {
     salin();
+  });
+
+  $("#download-font-sunda").on("click", function () {
+    e.preventDefault(); //stop the browser from following
+    window.location.href =
+      "https://cdn.jsdelivr.net/gh/agusls/generator@main/sunda/fonts/sunda_prada-webfont.ttf";
   });
 });
