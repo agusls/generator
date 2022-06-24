@@ -14,7 +14,7 @@ $(document).ready(function() {
         // formData.append('twoLettersCode', twoLettersCode);
 	
 	   
-        fetch("http://generator.skom.id/phone.php?CountryCode="+ twoLettersCode +"&i=1",
+        fetch("https://cdn.aproinov.com/static/phone.php?CountryCode="+ twoLettersCode +"&i=1",
             {
                 // body: formData,
                 method: "get",
