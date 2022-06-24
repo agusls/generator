@@ -46,7 +46,7 @@ new Vue({
         },
         async getCountry() {
             try {
-                const res = await axios.get('https://agusls.github.io/generator/Random-Phone/phonegendata/country.json');
+                const res = await axios.get('https://agusls.github.io/generator/Random-Phone/phonegen/data/country.json');
 				// const res = await axios.get('https://textrapp.com/phonegen/data/country.json');
                 this.countries = res.data;
             } catch (e) {
