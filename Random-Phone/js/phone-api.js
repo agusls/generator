@@ -14,10 +14,11 @@ $(document).ready(function() {
         // formData.append('twoLettersCode', twoLettersCode);
 	
 	   
-        fetch("https://generator.skom.id/phone.php?CountryCode="+ twoLettersCode +"&i=1",
+        fetch("http://generator.skom.id/phone.php?CountryCode="+ twoLettersCode +"&i=1",
             {
                 // body: formData,
-                method: "get"
+                method: "get",
+		mode: 'cors'
             }).then(data => data.text())
             .then((text) => {
                 
