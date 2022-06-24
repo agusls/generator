@@ -1,0 +1,53 @@
+.w-100 {
+    width: 100%;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.custom-scroll {
+    overflow-y: auto;
+}
+
+.custom-select .v-select__selections input[autocomplete="off"] {
+    caret-color: transparent;
+}
+
+.custom-select .v-input__append-inner {
+    margin-top: 22px !important;
+}
+
+.col-box {
+    width: 20%;
+}
+
+@media (max-width: 950px) {
+    .col-box {
+        width: 25%;
+    }
+}
+@media (max-width: 745px) {
+    .col-box {
+        width: 33.33%;
+    }
+}
+@media (max-width: 570px) {
+    .col-box {
+        width: 50%;
+    }
+}
+@media (max-width: 425px) {
+    .col-box {
+        width: 100%;
+    }
+}
+/*@media only screen and (max-width: 959px) {*/
+/*    .col-box {*/
+/*        width: 20%;*/
+/*    }*/
+/*}*/
