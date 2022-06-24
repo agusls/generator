@@ -29649,7 +29649,7 @@ html.overflow-y-hidden {
 }
 
 .v-timeline--align-top .v-timeline-item__body > .v-card:before {
-    top: 12px
+    top: 12px !important
 }
 
 .v-timeline--align-top .v-timeline-item__body > .v-card:after {
