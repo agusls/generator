@@ -13,22 +13,27 @@ $(document).ready(function() {
         // let formData = new FormData();
         // formData.append('twoLettersCode', twoLettersCode);
 	
-	    $.ajax({
-            type: 'GET',
-            url: "http://generator.skom.id/phone.php?CountryCode="+ twoLettersCode +"&i=1",
-            headers: {
-                'Content-Type':'application/json'
-            }
-            //OR
-            //beforeSend: function(xhr) {
-            //  xhr.setRequestHeader("My-First-Header", "first value");
-            //  xhr.setRequestHeader("My-Second-Header", "second value");
-            //}
-        }).done(function(data) {
-            // alert(data);
-            tResult.className = "";
-                 tResult.innerHTML = '<span class="resultText">' + data + '</span>';
-        });
+	   
+        fetch("https://generator.skom.id/phone.php?CountryCode="+ twoLettersCode +"&i=1",
+            {
+                // body: formData,
+                method: "get"
+            }).then(data => data.text())
+            .then((text) => {
+                
+                const phone = JSON.parse(text);
+
+                tResult.className = "";
+                tResult.innerHTML = '<span class="resultText">' + phone[0] + '</span>';
+
+                console.log('request succeeded with JSON response', text);
+
+            }).catch(function (error) {
+                tResult.className = "";
+                tResult.innerHTML = error;
+
+                console.log('request failed', error)
+            });
 	    
     }
 
