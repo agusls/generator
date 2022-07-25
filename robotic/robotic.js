@@ -3,7 +3,7 @@ var attachPlayEventInterval = false;
 var audio = $("body").append('<div style="display:none;" id="audio"></div>');
 
 var script = document.createElement('script');
-script.setAttribute('src', "./robotic/speakClient.js");
+script.setAttribute('src', "./speakClient.js");
 document.body.appendChild(script)
 script.addEventListener('load', function () {
     $('#play').html('<i class="fa fa-volume-up" aria-hidden="true"></i> Speak');
